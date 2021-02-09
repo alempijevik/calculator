@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.3s linear;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
+    height: 715px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.screen {
+    height: 30%;
+    width: 100%;    
+}
+
+.equasion {
+    height: 60%;
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: end;
+}
+
+.result {
+    height: 40%;
+    width: 100%;
+    padding: 15px;
+    color: rgb(188, 191, 195);
+    font-size: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: end;
+}
+
+.buttonWrapper {
+    width: 100%;
+    height: 70%;
+}
+
+.btn {
+    font-size: 1.3rem;
+    transition: all 0.2s linear;
+    outline: 0;
+    width: 100px;
+    height: 101px;  
+}
+#calculator > div.buttonWrapper > button:nth-child(20) {
+    background-color: rgb(167, 198, 133) !important;
+    color: white;
+    border-right: none;
+}
+
+#calculator > div.buttonWrapper > button:nth-child(20):hover {
+    background-color:rgb(147, 178, 113) !important;
+}
+
+/* Skins */
+
+/* Dark Mode */
+
+.dark_mode > .screen {
+    background-color: rgb(40, 47, 59);
+}
+
+.dark_mode > .screen > .result,
+.dark_mode > .screen > .equasion {
+    color: rgb(188, 191, 195);
+}
+.dark_mode > .screen > .equasion{
+    border-bottom: 1px solid rgb(73, 80, 93);
+}
+
+.dark_mode > div.buttonWrapper > button {
+    border: 0.5px solid rgb(73, 80, 93);
+    background-color: rgb(48, 57, 70);
+    color: rgb(188, 191, 195);
+}
+
+.dark_mode > div.buttonWrapper > .funcBtn {
+    background-color: rgb(65, 72, 83);
+}
+
+.dark_mode > div.buttonWrapper > button:nth-child(18),
+.dark_mode > div.buttonWrapper > button:nth-child(19) {
+    background-color: rgb(48, 57, 70) !important;
+}
+
+.dark_mode > div.buttonWrapper > .numBtn:hover,
+.dark_mode > div.buttonWrapper > button:nth-child(18):hover,
+.dark_mode > div.buttonWrapper > button:nth-child(19):hover {
+    background-color: rgb(58, 67, 80) !important;
+}
+
+.dark_mode > div.buttonWrapper > .funcBtn:hover {
+    background-color: rgb(75, 82, 93);
+}
+
+/* Light Mode */
+
+.light_mode > .screen {
+    background-color: rgb(252, 251, 252);
+}
+
+.light_mode > .screen > .result,
+.light_mode > .screen > .equasion {
+    color: rgb(97, 97, 97);
+}
+
+.light_mode > .screen > .equasion {
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.light_mode > div.buttonWrapper > button {
+    background-color: white;
+    color: rgb(97, 97, 97);
+    border: 0.5px solid rgb(245, 245, 245);
+}
+
+.light_mode > div.buttonWrapper > .funcBtn {
+    background-color: rgb(241, 241, 241);
+}
+
+.light_mode > div.buttonWrapper > button:nth-child(18),
+.light_mode > div.buttonWrapper > button:nth-child(19) {
+    background-color: white !important;
+}
+
+.light_mode > div.buttonWrapper > .numBtn:hover,
+.light_mode > div.buttonWrapper > button:nth-child(18):hover,
+.light_mode > div.buttonWrapper > button:nth-child(19):hover {
+    background-color: rgb(245, 245, 245) !important;
+}
+.light_mode > div.buttonWrapper > .funcBtn:hover {
+    background-color: rgb(220, 220, 220);
+}
