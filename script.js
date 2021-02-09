@@ -63,6 +63,8 @@ function handleOperations (operation) {
     let result = equasionString.split('<br>');
     if (result.length === 3) {
         equals(equasionString);
+        equasionString += `<br>${operation}<br>0`;
+        resultString = '0';
     } else {
         if (equasionString[equasionString.length - 1] === '.') {
             equasionString = equasionString.slice(0, equasionString.length - 1)
