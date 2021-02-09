@@ -20,6 +20,8 @@ body {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
     height: 715px;
     width: 400px;
+    min-width: 400px;
+    min-height: 715px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 15px;
@@ -154,4 +156,15 @@ body {
 }
 .light_mode > div.buttonWrapper > .funcBtn:hover {
     background-color: rgb(220, 220, 220);
+}
+@media (max-width: 402px) {
+    #calculator {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 322px) {
+    #calculator {
+        transform: scale(0.6);
+    }
 }
